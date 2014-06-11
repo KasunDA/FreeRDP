@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{F21179EC-F4A8-48AE-8FC8-37E5700DE108}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>wfreerdp-client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">wfreerdp-client.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libwfreerdp-client</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">wfreerdp-client.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libwfreerdp-client</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">wfreerdp-client.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libwfreerdp-client</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">wfreerdp-client.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libwfreerdp-client</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Debug\freerdp-client.lib;..\..\Debug\winpr-crt.lib;..\..\Debug\winpr-credui.lib;..\..\Debug\winpr-utils.lib;..\..\Debug\freerdp-core.lib;..\..\Debug\freerdp-gdi.lib;..\..\Debug\freerdp-codec.lib;..\..\Debug\freerdp-primitives.lib;..\..\Debug\freerdp-utils.lib;..\..\Debug\audin-client.lib;..\..\Debug\disp-client.lib;..\..\Debug\echo-client.lib;..\..\Debug\rdpei-client.lib;..\..\Debug\rdpgfx-client.lib;..\..\Debug\cliprdr-client.lib;..\..\Debug\drdynvc-client.lib;..\..\Debug\rail-client.lib;..\..\Debug\rdpdr-client.lib;..\..\Debug\rdpsnd-client.lib;..\..\Debug\drive-client.lib;..\..\Debug\printer-client.lib;..\..\Debug\smartcard-client.lib;..\..\Debug\winpr-smartcard.lib;..\..\Debug\audin-client-winmm.lib;..\..\Debug\rdpsnd-client-winmm.lib;winmm.lib;credui.lib;..\..\Debug\freerdp-cache.lib;..\..\Debug\freerdp-core.lib;..\..\Debug\freerdp-codec.lib;..\..\Debug\freerdp-primitives.lib;..\..\Debug\winpr-pool.lib;..\..\Debug\freerdp-crypto.lib;..\..\Debug\freerdp-locale.lib;..\..\Debug\winpr-input.lib;..\..\Debug\freerdp-common.lib;..\..\Debug\winpr-dsparse.lib;ntdsapi.lib;..\..\Debug\winpr-sspi.lib;..\..\Debug\winpr-registry.lib;..\..\Debug\winpr-crypto.lib;..\..\Debug\winpr-rpc.lib;rpcrt4.lib;..\..\Debug\winpr-wtsapi.lib;..\..\Debug\winpr-library.lib;..\..\Debug\winpr-io.lib;..\..\Debug\winpr-winsock.lib;..\..\Debug\freerdp-utils.lib;..\..\Debug\winpr-utils.lib;..\..\Debug\winpr-file.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;..\..\Debug\winpr-synch.lib;..\..\Debug\winpr-interlocked.lib;..\..\Debug\winpr-sysinfo.lib;ws2_32.lib;..\..\Debug\winpr-thread.lib;..\..\Debug\winpr-path.lib;..\..\Debug\winpr-environment.lib;..\..\Debug\winpr-error.lib;..\..\Debug\winpr-nt.lib;..\..\Debug\winpr-crt.lib;..\..\Debug\winpr-heap.lib;..\..\Debug\winpr-handle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Debug/wfreerdp-client.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Debug/libwfreerdp-client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Release";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Release\freerdp-client.lib;..\..\Release\winpr-crt.lib;..\..\Release\winpr-credui.lib;..\..\Release\winpr-utils.lib;..\..\Release\freerdp-core.lib;..\..\Release\freerdp-gdi.lib;..\..\Release\freerdp-codec.lib;..\..\Release\freerdp-primitives.lib;..\..\Release\freerdp-utils.lib;..\..\Release\audin-client.lib;..\..\Release\disp-client.lib;..\..\Release\echo-client.lib;..\..\Release\rdpei-client.lib;..\..\Release\rdpgfx-client.lib;..\..\Release\cliprdr-client.lib;..\..\Release\drdynvc-client.lib;..\..\Release\rail-client.lib;..\..\Release\rdpdr-client.lib;..\..\Release\rdpsnd-client.lib;..\..\Release\drive-client.lib;..\..\Release\printer-client.lib;..\..\Release\smartcard-client.lib;..\..\Release\winpr-smartcard.lib;..\..\Release\audin-client-winmm.lib;..\..\Release\rdpsnd-client-winmm.lib;winmm.lib;credui.lib;..\..\Release\freerdp-cache.lib;..\..\Release\freerdp-core.lib;..\..\Release\freerdp-codec.lib;..\..\Release\freerdp-primitives.lib;..\..\Release\winpr-pool.lib;..\..\Release\freerdp-crypto.lib;..\..\Release\freerdp-locale.lib;..\..\Release\winpr-input.lib;..\..\Release\freerdp-common.lib;..\..\Release\winpr-dsparse.lib;ntdsapi.lib;..\..\Release\winpr-sspi.lib;..\..\Release\winpr-registry.lib;..\..\Release\winpr-crypto.lib;..\..\Release\winpr-rpc.lib;rpcrt4.lib;..\..\Release\winpr-wtsapi.lib;..\..\Release\winpr-library.lib;..\..\Release\winpr-io.lib;..\..\Release\winpr-winsock.lib;..\..\Release\freerdp-utils.lib;..\..\Release\winpr-utils.lib;..\..\Release\winpr-file.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;..\..\Release\winpr-synch.lib;..\..\Release\winpr-interlocked.lib;..\..\Release\winpr-sysinfo.lib;ws2_32.lib;..\..\Release\winpr-thread.lib;..\..\Release\winpr-path.lib;..\..\Release\winpr-environment.lib;..\..\Release\winpr-error.lib;..\..\Release\winpr-nt.lib;..\..\Release\winpr-crt.lib;..\..\Release\winpr-heap.lib;..\..\Release\winpr-handle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Release/wfreerdp-client.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Release/libwfreerdp-client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\MinSizeRel\freerdp-client.lib;..\..\MinSizeRel\winpr-crt.lib;..\..\MinSizeRel\winpr-credui.lib;..\..\MinSizeRel\winpr-utils.lib;..\..\MinSizeRel\freerdp-core.lib;..\..\MinSizeRel\freerdp-gdi.lib;..\..\MinSizeRel\freerdp-codec.lib;..\..\MinSizeRel\freerdp-primitives.lib;..\..\MinSizeRel\freerdp-utils.lib;..\..\MinSizeRel\audin-client.lib;..\..\MinSizeRel\disp-client.lib;..\..\MinSizeRel\echo-client.lib;..\..\MinSizeRel\rdpei-client.lib;..\..\MinSizeRel\rdpgfx-client.lib;..\..\MinSizeRel\cliprdr-client.lib;..\..\MinSizeRel\drdynvc-client.lib;..\..\MinSizeRel\rail-client.lib;..\..\MinSizeRel\rdpdr-client.lib;..\..\MinSizeRel\rdpsnd-client.lib;..\..\MinSizeRel\drive-client.lib;..\..\MinSizeRel\printer-client.lib;..\..\MinSizeRel\smartcard-client.lib;..\..\MinSizeRel\winpr-smartcard.lib;..\..\MinSizeRel\audin-client-winmm.lib;..\..\MinSizeRel\rdpsnd-client-winmm.lib;winmm.lib;credui.lib;..\..\MinSizeRel\freerdp-cache.lib;..\..\MinSizeRel\freerdp-core.lib;..\..\MinSizeRel\freerdp-codec.lib;..\..\MinSizeRel\freerdp-primitives.lib;..\..\MinSizeRel\winpr-pool.lib;..\..\MinSizeRel\freerdp-crypto.lib;..\..\MinSizeRel\freerdp-locale.lib;..\..\MinSizeRel\winpr-input.lib;..\..\MinSizeRel\freerdp-common.lib;..\..\MinSizeRel\winpr-dsparse.lib;ntdsapi.lib;..\..\MinSizeRel\winpr-sspi.lib;..\..\MinSizeRel\winpr-registry.lib;..\..\MinSizeRel\winpr-crypto.lib;..\..\MinSizeRel\winpr-rpc.lib;rpcrt4.lib;..\..\MinSizeRel\winpr-wtsapi.lib;..\..\MinSizeRel\winpr-library.lib;..\..\MinSizeRel\winpr-io.lib;..\..\MinSizeRel\winpr-winsock.lib;..\..\MinSizeRel\freerdp-utils.lib;..\..\MinSizeRel\winpr-utils.lib;..\..\MinSizeRel\winpr-file.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;..\..\MinSizeRel\winpr-synch.lib;..\..\MinSizeRel\winpr-interlocked.lib;..\..\MinSizeRel\winpr-sysinfo.lib;ws2_32.lib;..\..\MinSizeRel\winpr-thread.lib;..\..\MinSizeRel\winpr-path.lib;..\..\MinSizeRel\winpr-environment.lib;..\..\MinSizeRel\winpr-error.lib;..\..\MinSizeRel\winpr-nt.lib;..\..\MinSizeRel\winpr-crt.lib;..\..\MinSizeRel\winpr-heap.lib;..\..\MinSizeRel\winpr-handle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/MinSizeRel/wfreerdp-client.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/MinSizeRel/libwfreerdp-client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";wfreerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\RelWithDebInfo\freerdp-client.lib;..\..\RelWithDebInfo\winpr-crt.lib;..\..\RelWithDebInfo\winpr-credui.lib;..\..\RelWithDebInfo\winpr-utils.lib;..\..\RelWithDebInfo\freerdp-core.lib;..\..\RelWithDebInfo\freerdp-gdi.lib;..\..\RelWithDebInfo\freerdp-codec.lib;..\..\RelWithDebInfo\freerdp-primitives.lib;..\..\RelWithDebInfo\freerdp-utils.lib;..\..\RelWithDebInfo\audin-client.lib;..\..\RelWithDebInfo\disp-client.lib;..\..\RelWithDebInfo\echo-client.lib;..\..\RelWithDebInfo\rdpei-client.lib;..\..\RelWithDebInfo\rdpgfx-client.lib;..\..\RelWithDebInfo\cliprdr-client.lib;..\..\RelWithDebInfo\drdynvc-client.lib;..\..\RelWithDebInfo\rail-client.lib;..\..\RelWithDebInfo\rdpdr-client.lib;..\..\RelWithDebInfo\rdpsnd-client.lib;..\..\RelWithDebInfo\drive-client.lib;..\..\RelWithDebInfo\printer-client.lib;..\..\RelWithDebInfo\smartcard-client.lib;..\..\RelWithDebInfo\winpr-smartcard.lib;..\..\RelWithDebInfo\audin-client-winmm.lib;..\..\RelWithDebInfo\rdpsnd-client-winmm.lib;winmm.lib;credui.lib;..\..\RelWithDebInfo\freerdp-cache.lib;..\..\RelWithDebInfo\freerdp-core.lib;..\..\RelWithDebInfo\freerdp-codec.lib;..\..\RelWithDebInfo\freerdp-primitives.lib;..\..\RelWithDebInfo\winpr-pool.lib;..\..\RelWithDebInfo\freerdp-crypto.lib;..\..\RelWithDebInfo\freerdp-locale.lib;..\..\RelWithDebInfo\winpr-input.lib;..\..\RelWithDebInfo\freerdp-common.lib;..\..\RelWithDebInfo\winpr-dsparse.lib;ntdsapi.lib;..\..\RelWithDebInfo\winpr-sspi.lib;..\..\RelWithDebInfo\winpr-registry.lib;..\..\RelWithDebInfo\winpr-crypto.lib;..\..\RelWithDebInfo\winpr-rpc.lib;rpcrt4.lib;..\..\RelWithDebInfo\winpr-wtsapi.lib;..\..\RelWithDebInfo\winpr-library.lib;..\..\RelWithDebInfo\winpr-io.lib;..\..\RelWithDebInfo\winpr-winsock.lib;..\..\RelWithDebInfo\freerdp-utils.lib;..\..\RelWithDebInfo\winpr-utils.lib;..\..\RelWithDebInfo\winpr-file.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;..\..\RelWithDebInfo\winpr-synch.lib;..\..\RelWithDebInfo\winpr-interlocked.lib;..\..\RelWithDebInfo\winpr-sysinfo.lib;ws2_32.lib;..\..\RelWithDebInfo\winpr-thread.lib;..\..\RelWithDebInfo\winpr-path.lib;..\..\RelWithDebInfo\winpr-environment.lib;..\..\RelWithDebInfo\winpr-error.lib;..\..\RelWithDebInfo\winpr-nt.lib;..\..\RelWithDebInfo\winpr-crt.lib;..\..\RelWithDebInfo\winpr-heap.lib;..\..\RelWithDebInfo\winpr-handle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/RelWithDebInfo/wfreerdp-client.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/RelWithDebInfo/libwfreerdp-client.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="wf_cliprdr_DataObject.h" />
+    <ClInclude Include="wf_cliprdr_EnumFORMATETC.h" />
+    <ClInclude Include="wf_cliprdr_Stream.h" />
+    <ClInclude Include="wf_gdi.h" />
+    <ClInclude Include="wf_event.h" />
+    <ClInclude Include="wf_graphics.h" />
+    <ClInclude Include="wf_cliprdr.h" />
+    <ClInclude Include="wf_window.h" />
+    <ClInclude Include="wf_rail.h" />
+    <ClInclude Include="wf_interface.h" />
+    <ClInclude Include="wf_floatbar.h" />
+    <ClInclude Include="resource.h" />
+    <ClCompile Include="wf_cliprdr_DataObject.c"  />
+    <ClCompile Include="wf_cliprdr_EnumFORMATETC.c"  />
+    <ClCompile Include="wf_cliprdr_Stream.c"  />
+    <ClCompile Include="wf_gdi.c"  />
+    <ClCompile Include="wf_event.c"  />
+    <ClCompile Include="wf_graphics.c"  />
+    <ClCompile Include="wf_cliprdr.c"  />
+    <ClCompile Include="wf_window.c"  />
+    <ClCompile Include="wf_rail.c"  />
+    <ClCompile Include="wf_interface.c"  />
+    <ClCompile Include="wf_floatbar.c"  />
+    <ResourceCompile Include="wfreerdp.rc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/audin/client/audin-client.vcxproj">
+      <Project>6C06A479-956C-47F4-86D4-B0B27EB2696B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/audin/client/winmm/audin-client-winmm.vcxproj">
+      <Project>4877D754-E611-4B85-AE0A-02FBBC0FF3BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/cliprdr/client/cliprdr-client.vcxproj">
+      <Project>D5029A23-6712-48FD-8D88-FE247C34CFCC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/disp/client/disp-client.vcxproj">
+      <Project>85A67833-5E7D-4861-A346-77C3A531C845</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/drdynvc/client/drdynvc-client.vcxproj">
+      <Project>D4E489D4-1A30-4D52-9012-54051AF562A1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/drive/client/drive-client.vcxproj">
+      <Project>E8FB3F22-7FA2-4C11-846C-306B3504A526</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/echo/client/echo-client.vcxproj">
+      <Project>46ACF663-BC77-410E-8B8B-CEB81E39DAFA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/cache/freerdp-cache.vcxproj">
+      <Project>7C1BA8E4-5E45-4094-90B6-473656C29CC8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/client/common/freerdp-client.vcxproj">
+      <Project>3C295165-FF81-4D12-BAEC-138626E4526E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/codec/freerdp-codec.vcxproj">
+      <Project>B9CCA946-C5BD-4CC6-922F-7CC184154968</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/common/freerdp-common.vcxproj">
+      <Project>1CB9564B-9EE9-40A3-A12E-7A0013A402FD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/core/freerdp-core.vcxproj">
+      <Project>4F0AF749-E8BC-4FF8-B896-14EBB4370C60</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/crypto/freerdp-crypto.vcxproj">
+      <Project>71DBB98A-1054-466A-A819-C365C114DD59</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/gdi/freerdp-gdi.vcxproj">
+      <Project>19E9B5E6-F813-45F4-9C96-125C71933F89</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/locale/freerdp-locale.vcxproj">
+      <Project>5FBBF705-6290-45EA-B396-3FC2B6F3ED5B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/primitives/freerdp-primitives.vcxproj">
+      <Project>7B1BF97C-E744-47B4-A573-DE29BE7EF879</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/utils/freerdp-utils.vcxproj">
+      <Project>70C4E593-AF05-42F0-AED0-814A68A6B3C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/printer/client/printer-client.vcxproj">
+      <Project>E4F32F5F-4C80-4A56-82C8-622957D7DFCF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/rail/client/rail-client.vcxproj">
+      <Project>0DE30556-46F7-4FAF-8AFA-D80ADFA32E5A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/rdpdr/client/rdpdr-client.vcxproj">
+      <Project>A4BB9082-3210-453C-9610-6D04485E36ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/rdpei/client/rdpei-client.vcxproj">
+      <Project>6CDE1F62-531B-4FBE-B067-D941EA84D820</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/rdpgfx/client/rdpgfx-client.vcxproj">
+      <Project>988C0D2F-6E58-4BD8-B88D-EAC9BF9DA72D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/rdpsnd/client/rdpsnd-client.vcxproj">
+      <Project>98631179-ADB9-4E5B-80F3-2005F12B3B7C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/rdpsnd/client/winmm/rdpsnd-client-winmm.vcxproj">
+      <Project>81BAD8FE-AFE6-46DD-911F-99F5B7A9ACD2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/channels/smartcard/client/smartcard-client.vcxproj">
+      <Project>5BEDBB7B-51CE-424F-A57B-9EB2D4F24804</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/credui/winpr-credui.vcxproj">
+      <Project>BDFB9F6C-2EF9-4C73-A38B-965208EB5573</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/crt/winpr-crt.vcxproj">
+      <Project>825545A4-DA87-4532-8211-0A9AFED2C5E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/crypto/winpr-crypto.vcxproj">
+      <Project>4E5CEA81-B001-4E51-9A4F-0EB556A6D68B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/dsparse/winpr-dsparse.vcxproj">
+      <Project>71DF58C6-B848-4954-931F-FBFBD6377B09</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/environment/winpr-environment.vcxproj">
+      <Project>ADB60431-BCCF-4CB8-8C0E-E138A57474B6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/error/winpr-error.vcxproj">
+      <Project>4AF767FA-4C9D-42EC-9B1D-BF186083E8E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/file/winpr-file.vcxproj">
+      <Project>DD902847-C640-412F-A834-06DC1F7FEB88</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/handle/winpr-handle.vcxproj">
+      <Project>C6DA5EA1-A9A1-4CFC-B07B-0B6370FFEA5C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/heap/winpr-heap.vcxproj">
+      <Project>60C07A95-36D0-4B73-A038-DFB351E90761</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/input/winpr-input.vcxproj">
+      <Project>37D2F89E-9069-43A0-8AAC-A219EDEA6F9C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/interlocked/winpr-interlocked.vcxproj">
+      <Project>97FFB6CC-93BB-4DBF-A733-91F2A1D2D580</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/io/winpr-io.vcxproj">
+      <Project>497D8F51-167B-4042-8BCC-9D2B17385ABA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/library/winpr-library.vcxproj">
+      <Project>7F8402A8-58FF-41B8-B5CD-03CC24DC8DC8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/nt/winpr-nt.vcxproj">
+      <Project>A1FA23D1-34F9-4B74-B556-AF36A68D0FF8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/path/winpr-path.vcxproj">
+      <Project>82E339FC-50F3-49E1-B229-A10D269FDFD5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/pool/winpr-pool.vcxproj">
+      <Project>BDDF92AA-AAB7-42A2-B56B-7287FAA691FD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/registry/winpr-registry.vcxproj">
+      <Project>3D75956F-BCEF-40B6-9B7D-A684F5228A31</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/rpc/winpr-rpc.vcxproj">
+      <Project>43689192-C210-45E6-9631-9FB109027E04</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/smartcard/winpr-smartcard.vcxproj">
+      <Project>58E83EB3-72BF-4146-AE2E-BC645AF51F54</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/sspi/winpr-sspi.vcxproj">
+      <Project>1B92E8C4-FC9B-4ADB-9B48-10593DA72B2E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/synch/winpr-synch.vcxproj">
+      <Project>10FBDA97-3BAF-42AF-B005-14F04BFAFE6F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/sysinfo/winpr-sysinfo.vcxproj">
+      <Project>F85F9BF9-DC8E-4F9C-81BD-2063B87693FD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/thread/winpr-thread.vcxproj">
+      <Project>E1A0AA40-EFB4-42CD-9630-9A34CC7E247F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/utils/winpr-utils.vcxproj">
+      <Project>7B21439D-0332-491A-AA0B-6505AF146102</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/winsock/winpr-winsock.vcxproj">
+      <Project>6BE9FB30-E25F-4101-8382-632D81C3FA1D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/wtsapi/winpr-wtsapi.vcxproj">
+      <Project>8E049620-2F85-463A-A341-2F23D1C10966</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
