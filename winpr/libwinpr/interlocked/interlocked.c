@@ -236,7 +236,7 @@ LONG InterlockedCompareExchange(LONG volatile *Destination, LONG Exchange, LONG 
 
 #endif /* _WIN32 */
 
-#if defined(_WIN64)
+#if defined(_WIN64) || (defined(_WIN32) && (_WIN32_WINNT >= 0x0502))
 
 /* InterlockedCompareExchange64 already defined */
 
