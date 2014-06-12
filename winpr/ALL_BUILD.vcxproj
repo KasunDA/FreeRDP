@@ -64,7 +64,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -74,7 +74,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -84,7 +84,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -94,7 +94,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,8 +112,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/varshab/Source/monitoring-platform/FreeRDP/CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\CMakeFiles\ALL_BUILD</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)winpr\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
@@ -123,8 +123,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/varshab/Source/monitoring-platform/FreeRDP/CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\CMakeFiles\ALL_BUILD</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)winpr\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
@@ -134,8 +134,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/varshab/Source/monitoring-platform/FreeRDP/CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\CMakeFiles\ALL_BUILD</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)winpr\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
@@ -145,8 +145,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/varshab/Source/monitoring-platform/FreeRDP/CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\CMakeFiles\ALL_BUILD</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)CMakeFiles/65c058bd74b5a516237ee11fe4af9663/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)winpr\CMakeFiles\ALL_BUILD</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -154,127 +154,127 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="CMakeFiles\ALL_BUILD" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/asn1/winpr-asn1.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/asn1/winpr-asn1.vcxproj">
       <Project>9A591CD7-E007-43EE-BBBD-EDF52558BBFF</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/bcrypt/winpr-bcrypt.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/bcrypt/winpr-bcrypt.vcxproj">
       <Project>92F180E0-24C9-4AD3-99FC-EEDD6D03C56D</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/com/winpr-com.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/com/winpr-com.vcxproj">
       <Project>D0EE6DA6-34EA-4839-8FEE-C20A4FB9A743</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/credentials/winpr-credentials.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/credentials/winpr-credentials.vcxproj">
       <Project>9A0ECE9A-4FAA-4A18-80D9-6D7ACEC5258B</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/credui/winpr-credui.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/credui/winpr-credui.vcxproj">
       <Project>BDFB9F6C-2EF9-4C73-A38B-965208EB5573</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/crt/winpr-crt.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/crt/winpr-crt.vcxproj">
       <Project>825545A4-DA87-4532-8211-0A9AFED2C5E0</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/crypto/winpr-crypto.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/crypto/winpr-crypto.vcxproj">
       <Project>4E5CEA81-B001-4E51-9A4F-0EB556A6D68B</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/dsparse/winpr-dsparse.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/dsparse/winpr-dsparse.vcxproj">
       <Project>71DF58C6-B848-4954-931F-FBFBD6377B09</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/environment/winpr-environment.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/environment/winpr-environment.vcxproj">
       <Project>ADB60431-BCCF-4CB8-8C0E-E138A57474B6</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/error/winpr-error.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/error/winpr-error.vcxproj">
       <Project>4AF767FA-4C9D-42EC-9B1D-BF186083E8E2</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/file/winpr-file.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/file/winpr-file.vcxproj">
       <Project>DD902847-C640-412F-A834-06DC1F7FEB88</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/handle/winpr-handle.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/handle/winpr-handle.vcxproj">
       <Project>C6DA5EA1-A9A1-4CFC-B07B-0B6370FFEA5C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/tools/hash/winpr-hash.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/tools/hash/winpr-hash.vcxproj">
       <Project>0E945379-8962-4825-A358-4686524ED3A0</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/heap/winpr-heap.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/heap/winpr-heap.vcxproj">
       <Project>60C07A95-36D0-4B73-A038-DFB351E90761</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/input/winpr-input.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/input/winpr-input.vcxproj">
       <Project>37D2F89E-9069-43A0-8AAC-A219EDEA6F9C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/interlocked/winpr-interlocked.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/interlocked/winpr-interlocked.vcxproj">
       <Project>97FFB6CC-93BB-4DBF-A733-91F2A1D2D580</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/io/winpr-io.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/io/winpr-io.vcxproj">
       <Project>497D8F51-167B-4042-8BCC-9D2B17385ABA</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/library/winpr-library.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/library/winpr-library.vcxproj">
       <Project>7F8402A8-58FF-41B8-B5CD-03CC24DC8DC8</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/locale/winpr-locale.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/locale/winpr-locale.vcxproj">
       <Project>C1F35CE4-59ED-47F1-B7BD-0B36DA6C1A57</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/tools/makecert/cli/winpr-makecert.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/tools/makecert/cli/winpr-makecert.vcxproj">
       <Project>46348203-CD09-400B-833F-66CEDA58DDDD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/tools/makecert/winpr-makecert-tool.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/tools/makecert/winpr-makecert-tool.vcxproj">
       <Project>272875D4-4B6A-469B-9CBD-72B647579EFC</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/memory/winpr-memory.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/memory/winpr-memory.vcxproj">
       <Project>A995C0E6-42B3-40E3-937F-B1DD7C0D9105</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/nt/winpr-nt.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/nt/winpr-nt.vcxproj">
       <Project>A1FA23D1-34F9-4B74-B556-AF36A68D0FF8</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/path/winpr-path.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/path/winpr-path.vcxproj">
       <Project>82E339FC-50F3-49E1-B229-A10D269FDFD5</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/pipe/winpr-pipe.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/pipe/winpr-pipe.vcxproj">
       <Project>22BD60B5-C039-46F3-A20C-F9DABF29311C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/pool/winpr-pool.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/pool/winpr-pool.vcxproj">
       <Project>BDDF92AA-AAB7-42A2-B56B-7287FAA691FD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/registry/winpr-registry.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/registry/winpr-registry.vcxproj">
       <Project>3D75956F-BCEF-40B6-9B7D-A684F5228A31</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/rpc/winpr-rpc.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/rpc/winpr-rpc.vcxproj">
       <Project>43689192-C210-45E6-9631-9FB109027E04</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/security/winpr-security.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/security/winpr-security.vcxproj">
       <Project>2436A457-C001-4144-8236-1AE11B44F922</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/smartcard/winpr-smartcard.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/smartcard/winpr-smartcard.vcxproj">
       <Project>58E83EB3-72BF-4146-AE2E-BC645AF51F54</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/sspi/winpr-sspi.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/sspi/winpr-sspi.vcxproj">
       <Project>1B92E8C4-FC9B-4ADB-9B48-10593DA72B2E</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/sspicli/winpr-sspicli.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/sspicli/winpr-sspicli.vcxproj">
       <Project>90BA4A10-1FE0-481C-A8FF-939F45614E4C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/synch/winpr-synch.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/synch/winpr-synch.vcxproj">
       <Project>10FBDA97-3BAF-42AF-B005-14F04BFAFE6F</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/sysinfo/winpr-sysinfo.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/sysinfo/winpr-sysinfo.vcxproj">
       <Project>F85F9BF9-DC8E-4F9C-81BD-2063B87693FD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/thread/winpr-thread.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/thread/winpr-thread.vcxproj">
       <Project>E1A0AA40-EFB4-42CD-9630-9A34CC7E247F</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/timezone/winpr-timezone.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/timezone/winpr-timezone.vcxproj">
       <Project>B33E2C0D-0D60-4E37-ABF0-BFFB15A4E11B</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/utils/winpr-utils.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/utils/winpr-utils.vcxproj">
       <Project>7B21439D-0332-491A-AA0B-6505AF146102</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/winhttp/winpr-winhttp.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/winhttp/winpr-winhttp.vcxproj">
       <Project>50A87631-8F75-421F-BF55-72F323EFA355</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/winsock/winpr-winsock.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/winsock/winpr-winsock.vcxproj">
       <Project>6BE9FB30-E25F-4101-8382-632D81C3FA1D</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/wnd/winpr-wnd.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/wnd/winpr-wnd.vcxproj">
       <Project>0E1DCBB6-6014-4443-A329-7F518206C31A</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/wtsapi/winpr-wtsapi.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/wtsapi/winpr-wtsapi.vcxproj">
       <Project>8E049620-2F85-463A-A341-2F23D1C10966</Project>
     </ProjectReference>
   </ItemGroup>

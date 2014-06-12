@@ -57,26 +57,26 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rdpei-client.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rdpei-client</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rdpei-client.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rdpei-client</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">rdpei-client.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">rdpei-client</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">rdpei-client.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">rdpei-client</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CallingConvention>Cdecl</CallingConvention>
@@ -94,10 +94,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -107,7 +107,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -124,10 +124,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -137,7 +137,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -154,10 +154,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -167,7 +167,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -184,10 +184,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\rdpei\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -202,52 +202,52 @@
     <ClCompile Include="rdpei_common.c"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/common/freerdp-common.vcxproj">
+    <ProjectReference Include="$(SolutionDir)libfreerdp/common/freerdp-common.vcxproj">
       <Project>1CB9564B-9EE9-40A3-A12E-7A0013A402FD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/libfreerdp/utils/freerdp-utils.vcxproj">
+    <ProjectReference Include="$(SolutionDir)libfreerdp/utils/freerdp-utils.vcxproj">
       <Project>70C4E593-AF05-42F0-AED0-814A68A6B3C3</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/crt/winpr-crt.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/crt/winpr-crt.vcxproj">
       <Project>825545A4-DA87-4532-8211-0A9AFED2C5E0</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/environment/winpr-environment.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/environment/winpr-environment.vcxproj">
       <Project>ADB60431-BCCF-4CB8-8C0E-E138A57474B6</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/error/winpr-error.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/error/winpr-error.vcxproj">
       <Project>4AF767FA-4C9D-42EC-9B1D-BF186083E8E2</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/file/winpr-file.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/file/winpr-file.vcxproj">
       <Project>DD902847-C640-412F-A834-06DC1F7FEB88</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/handle/winpr-handle.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/handle/winpr-handle.vcxproj">
       <Project>C6DA5EA1-A9A1-4CFC-B07B-0B6370FFEA5C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/heap/winpr-heap.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/heap/winpr-heap.vcxproj">
       <Project>60C07A95-36D0-4B73-A038-DFB351E90761</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/interlocked/winpr-interlocked.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/interlocked/winpr-interlocked.vcxproj">
       <Project>97FFB6CC-93BB-4DBF-A733-91F2A1D2D580</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/library/winpr-library.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/library/winpr-library.vcxproj">
       <Project>7F8402A8-58FF-41B8-B5CD-03CC24DC8DC8</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/nt/winpr-nt.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/nt/winpr-nt.vcxproj">
       <Project>A1FA23D1-34F9-4B74-B556-AF36A68D0FF8</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/path/winpr-path.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/path/winpr-path.vcxproj">
       <Project>82E339FC-50F3-49E1-B229-A10D269FDFD5</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/synch/winpr-synch.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/synch/winpr-synch.vcxproj">
       <Project>10FBDA97-3BAF-42AF-B005-14F04BFAFE6F</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/sysinfo/winpr-sysinfo.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/sysinfo/winpr-sysinfo.vcxproj">
       <Project>F85F9BF9-DC8E-4F9C-81BD-2063B87693FD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/thread/winpr-thread.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/thread/winpr-thread.vcxproj">
       <Project>E1A0AA40-EFB4-42CD-9630-9A34CC7E247F</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/utils/winpr-utils.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/utils/winpr-utils.vcxproj">
       <Project>7B21439D-0332-491A-AA0B-6505AF146102</Project>
     </ProjectReference>
   </ItemGroup>

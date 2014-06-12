@@ -57,25 +57,25 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">winpr-wtsapi.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libwinpr-wtsapi</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">winpr-wtsapi.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libwinpr-wtsapi</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">winpr-wtsapi.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libwinpr-wtsapi</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\varshab\Source\monitoring-platform\FreeRDP\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">winpr-wtsapi.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libwinpr-wtsapi</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
@@ -84,7 +84,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CallingConvention>Cdecl</CallingConvention>
@@ -102,10 +102,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";winpr_wtsapi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,8 +117,8 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Debug\winpr-nt.lib;$(SolutionDir)Debug\winpr-io.lib;$(SolutionDir)Debug\winpr-synch.lib;$(SolutionDir)Debug\winpr-file.lib;$(SolutionDir)Debug\winpr-error.lib;$(SolutionDir)Debug\winpr-library.lib;$(SolutionDir)Debug\winpr-environment.lib;$(SolutionDir)Debug\winpr-utils.lib;$(SolutionDir)Debug\winpr-file.lib;$(SolutionDir)Debug\winpr-synch.lib;$(SolutionDir)Debug\winpr-interlocked.lib;$(SolutionDir)Debug\winpr-thread.lib;$(SolutionDir)Debug\winpr-handle.lib;$(SolutionDir)Debug\winpr-path.lib;$(SolutionDir)Debug\winpr-environment.lib;$(SolutionDir)Debug\winpr-error.lib;$(SolutionDir)Debug\winpr-nt.lib;$(SolutionDir)Debug\winpr-crt.lib;$(SolutionDir)Debug\winpr-heap.lib;$(SolutionDir)Debug\winpr-sysinfo.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Debug/winpr-wtsapi.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Debug/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)Debug/winpr-wtsapi.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)Debug/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -145,10 +145,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";winpr_wtsapi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -160,8 +160,8 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Release\winpr-nt.lib;$(SolutionDir)Release\winpr-io.lib;$(SolutionDir)Release\winpr-synch.lib;$(SolutionDir)Release\winpr-file.lib;$(SolutionDir)Release\winpr-error.lib;$(SolutionDir)Release\winpr-library.lib;$(SolutionDir)Release\winpr-environment.lib;$(SolutionDir)Release\winpr-utils.lib;$(SolutionDir)Release\winpr-file.lib;$(SolutionDir)Release\winpr-synch.lib;$(SolutionDir)Release\winpr-interlocked.lib;$(SolutionDir)Release\winpr-thread.lib;$(SolutionDir)Release\winpr-handle.lib;$(SolutionDir)Release\winpr-path.lib;$(SolutionDir)Release\winpr-environment.lib;$(SolutionDir)Release\winpr-error.lib;$(SolutionDir)Release\winpr-nt.lib;$(SolutionDir)Release\winpr-crt.lib;$(SolutionDir)Release\winpr-heap.lib;$(SolutionDir)Release\winpr-sysinfo.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Release/winpr-wtsapi.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Release/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)Release/winpr-wtsapi.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)Release/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -171,7 +171,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -188,10 +188,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";winpr_wtsapi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -203,8 +203,8 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)MinSizeRel\winpr-nt.lib;$(SolutionDir)MinSizeRel\winpr-io.lib;$(SolutionDir)MinSizeRel\winpr-synch.lib;$(SolutionDir)MinSizeRel\winpr-file.lib;$(SolutionDir)MinSizeRel\winpr-error.lib;$(SolutionDir)MinSizeRel\winpr-library.lib;$(SolutionDir)MinSizeRel\winpr-environment.lib;$(SolutionDir)MinSizeRel\winpr-utils.lib;$(SolutionDir)MinSizeRel\winpr-file.lib;$(SolutionDir)MinSizeRel\winpr-synch.lib;$(SolutionDir)MinSizeRel\winpr-interlocked.lib;$(SolutionDir)MinSizeRel\winpr-thread.lib;$(SolutionDir)MinSizeRel\winpr-handle.lib;$(SolutionDir)MinSizeRel\winpr-path.lib;$(SolutionDir)MinSizeRel\winpr-environment.lib;$(SolutionDir)MinSizeRel\winpr-error.lib;$(SolutionDir)MinSizeRel\winpr-nt.lib;$(SolutionDir)MinSizeRel\winpr-crt.lib;$(SolutionDir)MinSizeRel\winpr-heap.lib;$(SolutionDir)MinSizeRel\winpr-sysinfo.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/MinSizeRel/winpr-wtsapi.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/MinSizeRel/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)MinSizeRel/winpr-wtsapi.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)MinSizeRel/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -214,7 +214,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";winpr_wtsapi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\varshab\Source\monitoring-platform\FreeRDP;C:\Users\varshab\Source\monitoring-platform\FreeRDP\include;C:\Users\varshab\Source\monitoring-platform\FreeRDP\winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -246,8 +246,8 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)RelWithDebInfo\winpr-nt.lib;$(SolutionDir)RelWithDebInfo\winpr-io.lib;$(SolutionDir)RelWithDebInfo\winpr-synch.lib;$(SolutionDir)RelWithDebInfo\winpr-file.lib;$(SolutionDir)RelWithDebInfo\winpr-error.lib;$(SolutionDir)RelWithDebInfo\winpr-library.lib;$(SolutionDir)RelWithDebInfo\winpr-environment.lib;$(SolutionDir)RelWithDebInfo\winpr-utils.lib;$(SolutionDir)RelWithDebInfo\winpr-file.lib;$(SolutionDir)RelWithDebInfo\winpr-synch.lib;$(SolutionDir)RelWithDebInfo\winpr-interlocked.lib;$(SolutionDir)RelWithDebInfo\winpr-thread.lib;$(SolutionDir)RelWithDebInfo\winpr-handle.lib;$(SolutionDir)RelWithDebInfo\winpr-path.lib;$(SolutionDir)RelWithDebInfo\winpr-environment.lib;$(SolutionDir)RelWithDebInfo\winpr-error.lib;$(SolutionDir)RelWithDebInfo\winpr-nt.lib;$(SolutionDir)RelWithDebInfo\winpr-crt.lib;$(SolutionDir)RelWithDebInfo\winpr-heap.lib;$(SolutionDir)RelWithDebInfo\winpr-sysinfo.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/RelWithDebInfo/winpr-wtsapi.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/varshab/Source/monitoring-platform/FreeRDP/RelWithDebInfo/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)RelWithDebInfo/winpr-wtsapi.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)RelWithDebInfo/libwinpr-wtsapi.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -260,49 +260,49 @@
     <ClCompile Include="wtsapi.c"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/crt/winpr-crt.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/crt/winpr-crt.vcxproj">
       <Project>825545A4-DA87-4532-8211-0A9AFED2C5E0</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/environment/winpr-environment.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/environment/winpr-environment.vcxproj">
       <Project>ADB60431-BCCF-4CB8-8C0E-E138A57474B6</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/error/winpr-error.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/error/winpr-error.vcxproj">
       <Project>4AF767FA-4C9D-42EC-9B1D-BF186083E8E2</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/file/winpr-file.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/file/winpr-file.vcxproj">
       <Project>DD902847-C640-412F-A834-06DC1F7FEB88</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/handle/winpr-handle.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/handle/winpr-handle.vcxproj">
       <Project>C6DA5EA1-A9A1-4CFC-B07B-0B6370FFEA5C</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/heap/winpr-heap.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/heap/winpr-heap.vcxproj">
       <Project>60C07A95-36D0-4B73-A038-DFB351E90761</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/interlocked/winpr-interlocked.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/interlocked/winpr-interlocked.vcxproj">
       <Project>97FFB6CC-93BB-4DBF-A733-91F2A1D2D580</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/io/winpr-io.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/io/winpr-io.vcxproj">
       <Project>497D8F51-167B-4042-8BCC-9D2B17385ABA</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/library/winpr-library.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/library/winpr-library.vcxproj">
       <Project>7F8402A8-58FF-41B8-B5CD-03CC24DC8DC8</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/nt/winpr-nt.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/nt/winpr-nt.vcxproj">
       <Project>A1FA23D1-34F9-4B74-B556-AF36A68D0FF8</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/path/winpr-path.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/path/winpr-path.vcxproj">
       <Project>82E339FC-50F3-49E1-B229-A10D269FDFD5</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/synch/winpr-synch.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/synch/winpr-synch.vcxproj">
       <Project>10FBDA97-3BAF-42AF-B005-14F04BFAFE6F</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/sysinfo/winpr-sysinfo.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/sysinfo/winpr-sysinfo.vcxproj">
       <Project>F85F9BF9-DC8E-4F9C-81BD-2063B87693FD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/thread/winpr-thread.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/thread/winpr-thread.vcxproj">
       <Project>E1A0AA40-EFB4-42CD-9630-9A34CC7E247F</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/varshab/Source/monitoring-platform/FreeRDP/winpr/libwinpr/utils/winpr-utils.vcxproj">
+    <ProjectReference Include="$(SolutionDir)winpr/libwinpr/utils/winpr-utils.vcxproj">
       <Project>7B21439D-0332-491A-AA0B-6505AF146102</Project>
     </ProjectReference>
   </ItemGroup>
