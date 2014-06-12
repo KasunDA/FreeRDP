@@ -84,7 +84,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CallingConvention>Cdecl</CallingConvention>
@@ -102,10 +102,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";winpr_bcrypt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,7 +114,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Debug\winpr-crt.lib;$(SolutionDir)Debug\winpr-utils.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;$(SolutionDir)Debug\winpr-file.lib;$(SolutionDir)Debug\winpr-synch.lib;$(SolutionDir)Debug\winpr-interlocked.lib;$(SolutionDir)Debug\winpr-thread.lib;$(SolutionDir)Debug\winpr-path.lib;$(SolutionDir)Debug\winpr-heap.lib;$(SolutionDir)Debug\winpr-environment.lib;$(SolutionDir)Debug\winpr-error.lib;$(SolutionDir)Debug\winpr-nt.lib;$(SolutionDir)Debug\winpr-crt.lib;$(SolutionDir)Debug\winpr-handle.lib;$(SolutionDir)Debug\winpr-sysinfo.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Debug\winpr-crt.lib;$(SolutionDir)Debug\winpr-utils.lib;$(SolutionDir)..\openssl\out32dll\ssleay32.lib;$(SolutionDir)..\openssl\out32dll\libeay32.lib;$(SolutionDir)Debug\winpr-file.lib;$(SolutionDir)Debug\winpr-synch.lib;$(SolutionDir)Debug\winpr-interlocked.lib;$(SolutionDir)Debug\winpr-thread.lib;$(SolutionDir)Debug\winpr-path.lib;$(SolutionDir)Debug\winpr-heap.lib;$(SolutionDir)Debug\winpr-environment.lib;$(SolutionDir)Debug\winpr-error.lib;$(SolutionDir)Debug\winpr-nt.lib;$(SolutionDir)Debug\winpr-crt.lib;$(SolutionDir)Debug\winpr-handle.lib;$(SolutionDir)Debug\winpr-sysinfo.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(SolutionDir)Debug/winpr-bcrypt.lib</ImportLibrary>
@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -145,10 +145,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";winpr_bcrypt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,7 +157,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Release\winpr-crt.lib;$(SolutionDir)Release\winpr-utils.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;$(SolutionDir)Release\winpr-file.lib;$(SolutionDir)Release\winpr-synch.lib;$(SolutionDir)Release\winpr-interlocked.lib;$(SolutionDir)Release\winpr-thread.lib;$(SolutionDir)Release\winpr-path.lib;$(SolutionDir)Release\winpr-heap.lib;$(SolutionDir)Release\winpr-environment.lib;$(SolutionDir)Release\winpr-error.lib;$(SolutionDir)Release\winpr-nt.lib;$(SolutionDir)Release\winpr-crt.lib;$(SolutionDir)Release\winpr-handle.lib;$(SolutionDir)Release\winpr-sysinfo.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Release\winpr-crt.lib;$(SolutionDir)Release\winpr-utils.lib;$(SolutionDir)..\openssl\out32dll\ssleay32.lib;$(SolutionDir)..\openssl\out32dll\libeay32.lib;$(SolutionDir)Release\winpr-file.lib;$(SolutionDir)Release\winpr-synch.lib;$(SolutionDir)Release\winpr-interlocked.lib;$(SolutionDir)Release\winpr-thread.lib;$(SolutionDir)Release\winpr-path.lib;$(SolutionDir)Release\winpr-heap.lib;$(SolutionDir)Release\winpr-environment.lib;$(SolutionDir)Release\winpr-error.lib;$(SolutionDir)Release\winpr-nt.lib;$(SolutionDir)Release\winpr-crt.lib;$(SolutionDir)Release\winpr-handle.lib;$(SolutionDir)Release\winpr-sysinfo.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(SolutionDir)Release/winpr-bcrypt.lib</ImportLibrary>
@@ -171,7 +171,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -188,10 +188,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";winpr_bcrypt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,7 +200,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)MinSizeRel\winpr-crt.lib;$(SolutionDir)MinSizeRel\winpr-utils.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;$(SolutionDir)MinSizeRel\winpr-file.lib;$(SolutionDir)MinSizeRel\winpr-synch.lib;$(SolutionDir)MinSizeRel\winpr-interlocked.lib;$(SolutionDir)MinSizeRel\winpr-thread.lib;$(SolutionDir)MinSizeRel\winpr-path.lib;$(SolutionDir)MinSizeRel\winpr-heap.lib;$(SolutionDir)MinSizeRel\winpr-environment.lib;$(SolutionDir)MinSizeRel\winpr-error.lib;$(SolutionDir)MinSizeRel\winpr-nt.lib;$(SolutionDir)MinSizeRel\winpr-crt.lib;$(SolutionDir)MinSizeRel\winpr-handle.lib;$(SolutionDir)MinSizeRel\winpr-sysinfo.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)MinSizeRel\winpr-crt.lib;$(SolutionDir)MinSizeRel\winpr-utils.lib;$(SolutionDir)..\openssl\out32dll\ssleay32.lib;$(SolutionDir)..\openssl\out32dll\libeay32.lib;$(SolutionDir)MinSizeRel\winpr-file.lib;$(SolutionDir)MinSizeRel\winpr-synch.lib;$(SolutionDir)MinSizeRel\winpr-interlocked.lib;$(SolutionDir)MinSizeRel\winpr-thread.lib;$(SolutionDir)MinSizeRel\winpr-path.lib;$(SolutionDir)MinSizeRel\winpr-heap.lib;$(SolutionDir)MinSizeRel\winpr-environment.lib;$(SolutionDir)MinSizeRel\winpr-error.lib;$(SolutionDir)MinSizeRel\winpr-nt.lib;$(SolutionDir)MinSizeRel\winpr-crt.lib;$(SolutionDir)MinSizeRel\winpr-handle.lib;$(SolutionDir)MinSizeRel\winpr-sysinfo.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(SolutionDir)MinSizeRel/winpr-bcrypt.lib</ImportLibrary>
@@ -214,7 +214,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsC</CompileAs>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";winpr_bcrypt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;C:\Users\varshab\Source\monitoring-platform\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)..\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,7 +243,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)RelWithDebInfo\winpr-crt.lib;$(SolutionDir)RelWithDebInfo\winpr-utils.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\ssleay32.lib;C:\Users\varshab\Source\monitoring-platform\openssl\out32dll\libeay32.lib;$(SolutionDir)RelWithDebInfo\winpr-file.lib;$(SolutionDir)RelWithDebInfo\winpr-synch.lib;$(SolutionDir)RelWithDebInfo\winpr-interlocked.lib;$(SolutionDir)RelWithDebInfo\winpr-thread.lib;$(SolutionDir)RelWithDebInfo\winpr-path.lib;$(SolutionDir)RelWithDebInfo\winpr-heap.lib;$(SolutionDir)RelWithDebInfo\winpr-environment.lib;$(SolutionDir)RelWithDebInfo\winpr-error.lib;$(SolutionDir)RelWithDebInfo\winpr-nt.lib;$(SolutionDir)RelWithDebInfo\winpr-crt.lib;$(SolutionDir)RelWithDebInfo\winpr-handle.lib;$(SolutionDir)RelWithDebInfo\winpr-sysinfo.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)RelWithDebInfo\winpr-crt.lib;$(SolutionDir)RelWithDebInfo\winpr-utils.lib;$(SolutionDir)..\openssl\out32dll\ssleay32.lib;$(SolutionDir)..\openssl\out32dll\libeay32.lib;$(SolutionDir)RelWithDebInfo\winpr-file.lib;$(SolutionDir)RelWithDebInfo\winpr-synch.lib;$(SolutionDir)RelWithDebInfo\winpr-interlocked.lib;$(SolutionDir)RelWithDebInfo\winpr-thread.lib;$(SolutionDir)RelWithDebInfo\winpr-path.lib;$(SolutionDir)RelWithDebInfo\winpr-heap.lib;$(SolutionDir)RelWithDebInfo\winpr-environment.lib;$(SolutionDir)RelWithDebInfo\winpr-error.lib;$(SolutionDir)RelWithDebInfo\winpr-nt.lib;$(SolutionDir)RelWithDebInfo\winpr-crt.lib;$(SolutionDir)RelWithDebInfo\winpr-handle.lib;$(SolutionDir)RelWithDebInfo\winpr-sysinfo.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(SolutionDir)RelWithDebInfo/winpr-bcrypt.lib</ImportLibrary>
