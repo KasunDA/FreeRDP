@@ -114,7 +114,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\Debug\winpr-crt.lib;..\..\..\Debug\winpr-path.lib;..\..\..\Debug\winpr-heap.lib;..\..\..\Debug\winpr-environment.lib;..\..\..\Debug\winpr-error.lib;..\..\..\Debug\winpr-nt.lib;..\..\..\Debug\winpr-crt.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Debug\winpr-crt.lib;$(SolutionDir)Debug\winpr-path.lib;$(SolutionDir)Debug\winpr-heap.lib;$(SolutionDir)Debug\winpr-environment.lib;$(SolutionDir)Debug\winpr-error.lib;$(SolutionDir)Debug\winpr-nt.lib;$(SolutionDir)Debug\winpr-crt.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Debug/winpr-io.lib</ImportLibrary>
@@ -158,7 +158,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\Release\winpr-crt.lib;..\..\..\Release\winpr-path.lib;..\..\..\Release\winpr-heap.lib;..\..\..\Release\winpr-environment.lib;..\..\..\Release\winpr-error.lib;..\..\..\Release\winpr-nt.lib;..\..\..\Release\winpr-crt.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)Release\winpr-crt.lib;$(SolutionDir)Release\winpr-path.lib;$(SolutionDir)Release\winpr-heap.lib;$(SolutionDir)Release\winpr-environment.lib;$(SolutionDir)Release\winpr-error.lib;$(SolutionDir)Release\winpr-nt.lib;$(SolutionDir)Release\winpr-crt.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/Release/winpr-io.lib</ImportLibrary>
@@ -202,7 +202,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\MinSizeRel\winpr-crt.lib;..\..\..\MinSizeRel\winpr-path.lib;..\..\..\MinSizeRel\winpr-heap.lib;..\..\..\MinSizeRel\winpr-environment.lib;..\..\..\MinSizeRel\winpr-error.lib;..\..\..\MinSizeRel\winpr-nt.lib;..\..\..\MinSizeRel\winpr-crt.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)MinSizeRel\winpr-crt.lib;$(SolutionDir)MinSizeRel\winpr-path.lib;$(SolutionDir)MinSizeRel\winpr-heap.lib;$(SolutionDir)MinSizeRel\winpr-environment.lib;$(SolutionDir)MinSizeRel\winpr-error.lib;$(SolutionDir)MinSizeRel\winpr-nt.lib;$(SolutionDir)MinSizeRel\winpr-crt.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/MinSizeRel/winpr-io.lib</ImportLibrary>
@@ -246,7 +246,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\RelWithDebInfo\winpr-crt.lib;..\..\..\RelWithDebInfo\winpr-path.lib;..\..\..\RelWithDebInfo\winpr-heap.lib;..\..\..\RelWithDebInfo\winpr-environment.lib;..\..\..\RelWithDebInfo\winpr-error.lib;..\..\..\RelWithDebInfo\winpr-nt.lib;..\..\..\RelWithDebInfo\winpr-crt.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)RelWithDebInfo\winpr-crt.lib;$(SolutionDir)RelWithDebInfo\winpr-path.lib;$(SolutionDir)RelWithDebInfo\winpr-heap.lib;$(SolutionDir)RelWithDebInfo\winpr-environment.lib;$(SolutionDir)RelWithDebInfo\winpr-error.lib;$(SolutionDir)RelWithDebInfo\winpr-nt.lib;$(SolutionDir)RelWithDebInfo\winpr-crt.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>C:/Users/varshab/Source/monitoring-platform/FreeRDP/RelWithDebInfo/winpr-io.lib</ImportLibrary>
