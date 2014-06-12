@@ -89,11 +89,11 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\echo\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -119,11 +119,11 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat></DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\echo\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -149,11 +149,11 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat></DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\echo\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -179,11 +179,11 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0501;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)include;$(SolutionDir)winpr\include;$(SolutionDir)channels\echo\client\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
